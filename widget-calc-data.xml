@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<calc>
+	<styles chrmclr='CCD890'>
+		<stl id='body' chrmclr='CCD890'>
+			<fnt sz='14' clr='444444'/>
+			<state nm='normal'>
+				<bck clrs='0xFFFFCC;0xEEEECC' alphs='1;1' rts='0.5;1' rot='90'/>
+			</state>
+			<state nm='over'>
+				<bck clrs='f5f672;fCcEaC' rot='270'/>			<!--clrs'0xCCCCC2;0xFFCCFF' rts='0;1' alphs='1;1'"-->
+			</state>
+		</stl>
+		<stl id='header'>
+			<fnt sz='14' clr='444444'/>
+			<state nm='normal;over'>
+				<bck clrs='ECAE8C;F5D652' rot='90'/>
+				<shp tlx='10' trx='1'/>
+			</state>
+		</stl>
+		<stl id='footer'>
+			<fnt sz='14' clr='444444'/>
+			<state nm='normal;over'>
+				<bck clrs='F5D652;ECAE8C' rot='270'/>
+				<shp brx='10' />
+			</state>
+		</stl>
+		<stl id='special'>
+			<fnt sz='14' clr='444444'/>
+			<state nm='normal;over'>
+				<bck clrs='B2FFB2' rot='270'/>
+			</state>
+		</stl>
+	</styles>
+	<prm sep=';'
+		colTypes='Label;Comp;Label' 
+		colWidths='100%;140'
+		clrs='FFFFFF' rot='90' rts='0;1'
+		bpath='images/' outimgw='210' defimg='Home.jpg' useImg='true'
+		stl='body'>
+	</prm>
+	<no>
+		<lbl t='Опция;Ваш выбор;Примечание' loc='header' stl='header'/>
+		<sm id='res' rounddig='-2'>
+			<ml id='mult' dlev='4'>
+				<num v='1000'/>
+				<ns v='1' t='Coeficient' min='0' max='15' st='.1' />
+			</ml>
+			<lbl t='Дополнительные параметры' stl='special'/>
+			<ml>
+				<var rf='mult'/>
+				<sm>
+					<rb v='0;0.2' labs='в лапу;в чашу' t='Рубка в лапу(0%),в чашу(20%)' outimg='Cutting.jpg'/>
+					<ch v='0.3' t='5-я стена (+30%);Примечание к 5 стене' outimg='5Wall.jpg'/>
+					<ch v='0.3' t='Рубленный фронтон (+30%)' outimg='Fronton.jpg'/>
+					<ch v='0.2' t='Сложный сруб (более 4-х углов) (+20%)' outimg='ComplexFrame.jpg'/>
+					<ch v='0.5' t='Сборка сруба (+50%)' outimg='Home.jpg'/>
+				</sm>
+			</ml>
+		</sm>
+		<out rf='res' t='Сумма:' loc='footer' stl='footer' triadsep=' ' decimalsep=',' currency=' р.'/>
+	</no>
+</calc>
