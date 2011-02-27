@@ -3,7 +3,7 @@
 Plugin Name: IVENC Calculator
 Plugin URI: http://www.ivenc.com/ru/m-ivenc-online-calc
 Description: IVENC Calculator is flexible tool for create different calculators through customize xml-file
-Version: 1.0.0
+Version: 1.0
 Author: IVENC LLC, Ilya Protasov
 Author URI: http://www.ivenc.com/
 
