@@ -26,7 +26,7 @@ Author URI: http://www.ivenc.com/
 */
 
 define("CALC_WIDTH", 400);
-define("CALC_HEIGHT", 300);
+define("CALC_HEIGHT", 400);
 
 function iv_calc_substitute(&$match) {
     $len = count( $match );

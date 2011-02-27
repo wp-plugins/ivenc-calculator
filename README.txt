@@ -34,6 +34,9 @@ Activate IVENC Calculator in the "Plugins" admin panel using the "Activate" link
 Use text like this for insert calculator in article:
 `[iv-calc]width:400;height:300;xml:http://www.example-site.com/data.xml;[/iv-calc]`
 
+or this for use default settings:
+`[iv-calc][/iv-calc]`
+
 == Frequently Asked Questions ==
 
 = Where I can read more information? =
