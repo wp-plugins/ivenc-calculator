@@ -25,6 +25,8 @@ Key features:
 * Custom order of colums and rows
 * Control feature caching of xml
 
+For more information visit [plugin's page](http://www.ivenc.com/ru/m-ivenc-online-calc "IVENC Calculator page").
+
 == Installation ==
 
 You can download and install IVENC Calculator using the built in WordPress plugin installer. If you download IVENC Calculator manually, make sure it is uploaded to "/wp-content/plugins/ivenc-calculator/".
@@ -41,7 +43,7 @@ or this for use default settings:
 
 = Where I can read more information? =
 
-More information on [plugin's page](http://www.ivenc.com/ru/m-ivenc-online-calc "IVENC Calculator page").
+More information at [plugin's page](http://www.ivenc.com/ru/m-ivenc-online-calc "IVENC Calculator page").
 
 = Can I change the visual appearance? =
 
